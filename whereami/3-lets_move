@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+cd /tmp/sym/
+pwd
+echo "Moving the files!"
+find . -type f -name "[[:upper:]]*" | xargs -I '{}' mv '{}' /tmp/u/
+echo "The files have been moved"
+ls -la /tmp/u/
+echo " " 
+ls -la /tmp/sym/
